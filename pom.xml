@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.atlassian.connect</groupId>
             <artifactId>atlassian-connect-spring-boot-starter</artifactId>
-            <version>${atlassian-connect-spring-boot.version}</version>
+            <version>5.2.20</version>
         </dependency>
         <dependency>
             <groupId>com.atlassian.connect</groupId>
