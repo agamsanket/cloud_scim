@@ -5,16 +5,16 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>2.4.5</version>
     </parent>
 
-    <groupId>com.miniorange.exporter</groupId>
-    <artifactId>jiraExporter</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.miniorange.usersync</groupId>
+    <artifactId>miniorange-usersync-jira</artifactId>
+    <version>1.0.2</version>
 
     <properties>
         <java.version>1.8</java.version>
-        <atlassian-connect-spring-boot.version>2.1.0</atlassian-connect-spring-boot.version>
+        <atlassian-connect-spring-boot.version>2.2.3</atlassian-connect-spring-boot.version>
     </properties>
 
     <dependencies>
@@ -25,47 +25,37 @@
         <dependency>
             <groupId>com.atlassian.connect</groupId>
             <artifactId>atlassian-connect-spring-boot-starter</artifactId>
-            <version>${atlassian-connect-spring-boot.version}</version>
+            <version>5.2.20</version>
         </dependency>
         <dependency>
             <groupId>com.atlassian.connect</groupId>
             <artifactId>atlassian-connect-spring-boot-jpa-starter</artifactId>
             <version>${atlassian-connect-spring-boot.version}</version>
         </dependency>
-        <!--        thymeleaf-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>2.5.8</version>
         </dependency>
-        <!-- Pdf dependency -->
+        <!--        thymeleaf-->
         <dependency>
-            <!-- ALWAYS required -->
-            <groupId>com.openhtmltopdf</groupId>
-            <artifactId>openhtmltopdf-core</artifactId>
-            <version>1.0.8</version>
+            <groupId>com.mashape.unirest</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>1.4.9</version>
         </dependency>
+
+        <!--        postgres-->
         <dependency>
-            <groupId>com.openhtmltopdf</groupId>
-            <artifactId>openhtmltopdf-pdfbox</artifactId>
-            <version>1.0.8</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.3.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.13.1</version>
-        </dependency>
-        <!--Freemaker template -->
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.31</version>
-        </dependency>
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
+            <version>3.11</version>
         </dependency>
-
     </dependencies>
 
     <build>
