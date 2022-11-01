@@ -67,16 +67,15 @@
             <version>3.0.0-beta-1</version>
             <exclusions>
                 <exclusion>
-                    <groupId>org.liquibase</groupId>
-                    <artifactId>liquibase-core</artifactId>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-text</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
-
         <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <version>4.17.0</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.10.0</version>
         </dependency>
 
         <dependency>
